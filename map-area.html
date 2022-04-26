@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <h2>Mapa de imágenes</h2>
+
+    <p>Click en la fotografía para seguir:</p>
+
+    <img src="https://viajes.nationalgeographic.com.es/medio/2021/05/10/1-the-european-museum-of-the-year-2021-naturalis-biodiversity-center_5e81513e_1200x799.jpg" 
+            alt="Museo europeo" usemap="#europa-museo" width="400" height="379">
+
+    <!--
+        shape="rect" coords="X_ti,Y_ti, X_br,Y_br" ej: "34, 44, 270, 350"
+        shape="circle" coords="X,Y,r" ej: "350,250,44"
+        shape="poly" coords="X1,Y1,  ...... Xn,Yn"
+    -->
+    <map name="europa-museo">
+        <area shape="rect" coords="320,216, 400,263" 
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Naturalis_Biodiversity_Center"
+                onclick="funcAlert()">
+    </map>
+
+    <script>
+        function funcAlert() {
+            alert("Has seleccionado galeria derecha en segundo piso!");
+        }
+    </script>
+
+</body>
+
+</html>

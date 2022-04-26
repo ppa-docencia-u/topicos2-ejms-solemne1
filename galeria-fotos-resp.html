@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 25px;
+        }
+        img:hover {
+            transform: scaleX(-1);
+        }
+        .foto-container {
+            position: relative;
+        }
+
+        div.foto {
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+            opacity: 1;
+            
+        }
+
+        div.contenedor {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 1.5rem;
+            color: yellow;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 1.5rem;
+            color: yellow;
+        }
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 24px;
+            color: yellow;
+        }
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 1.5rem;
+            color: yellow;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Imágenes 'responsivas' / Tipo: Cards</h2>
+
+    <!--
+        https://www.w3schools.com/css/img_5terre_wide.jpg
+        https://curioseando779.files.wordpress.com/2017/06/fondos-paisajes-naturales-158.jpg
+        https://viajes.nationalgeographic.com.es/medio/2020/04/14/yosemite_1948f98f_1200x799.jpg
+        https://viajes.nationalgeographic.com.es/medio/2021/05/10/1-the-european-museum-of-the-year-2021-naturalis-biodiversity-center_5e81513e_1200x799.jpg
+        https://viajes.nationalgeographic.com.es/medio/2020/03/27/india_453108be_1408x744.jpg
+    -->
+
+    <div class="foto">
+        <div class="foto-container">
+            <a target="_blank" href="https://www.w3schools.com/css/img_5terre_wide.jpg">
+                <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" 
+                    alt="Descripción alterna de fotografía 1"
+                    style="width:100%">
+            </a>
+            <div class="topleft">Esq. Sup. Izq.</div>
+            <div class="topright">Esq. Sup. Der.</div>
+            <div class="bottomleft">Esq. Inf. Izq.</div>
+            <div class="bottomright">Esq. Inf. Der.</div>
+            <div class="center">Centrado</div>
+        </div>
+        <div class="contenedor">
+            <p>Fotografía 1</p>
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="https://www.w3schools.com/css/lights600x400.jpg" 
+             alt="Descripción alterna de fotografía 2" style="width:100%">
+        <div class="contenedor">
+            <p>Fotografía 2</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

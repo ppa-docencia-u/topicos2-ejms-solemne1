@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        dd::before {
+            color:green;
+            content: "GeeksforGeeks \A "
+                "A computer science portal";
+            display: block;
+            white-space: pre;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Galería 'responsiva' de imágenes....</h2>
+    
+    <h4>Validar visualización con diferentes tamaños de ventana</h4>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
+                <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Descripción de la imagen 1</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.w3schools.com/css/img_forest.jpg">
+                <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Descripción de la imagen 2</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.w3schools.com/css/img_lights.jpg">
+                <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Descripción de la imagen 3</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://www.w3schools.com/css/img_mountains.jpg">
+                <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Descripción de la imagen 4</div>
+        </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+
+    <div style="padding:6px;">
+        <p>Este ejemplo reorganiza las imágenes de acuerdo al tamaño de la pantalla:
+        <dl>
+            <dt>Pantallas mayores a 700px:</dt>
+            <dd>Muestra todas las imágenes una al lado de la otra</dd>
+            <dt>Pantallas inferiores a 700px:</dt>
+            <dd>Muestra de dos imágenes por fila, una al lado de la otra</dd>
+            <dt>Pantallas inferiores a 500px:</dt>
+            <dd>Apila las imágenes verticalmente y renderiza al 100%</dd>
+        </dl>
+    </div>
+
+</body>
+
+</html>
